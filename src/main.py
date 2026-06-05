@@ -23,7 +23,14 @@ def main():
                     copy_src(src_entry, dst_entry)
 
         copy_src(src, dst)
-                
+        
+    # This is code for Website section
+    # def extract_title(markdown):
+    #     for line in markdown.readlines():
+    #         if line.startswith(("# ", "#")):
+    #             return line.strip("# ")
+    #     raise Exception("No h1 header found!")
+    
     copy_static("static", "public")
 if __name__ == "__main__":
     main()
