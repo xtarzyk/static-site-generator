@@ -4,8 +4,9 @@ from copystatic import copy_static
 from generate_pages_recursive import generate_pages_recursive
 
 def main():
-    basepath = sys.argv[0]
-    if not basepath:
+    if len(sys.argv) > 1:
+        basepath = sys.argv[1]
+    else:
         basepath = "/"
     
     copy_static("static", "docs")
